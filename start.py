@@ -14,7 +14,7 @@ def repeatSend():
 
 
 def loopme():
-  if repeatSend() == "01:27:pm":
+  if repeatSend() == "12:01:am":
     url = 'https://shopee.ph/mkt/coins/api/v2/checkin_new'
     headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0"}
     configs = [".OGl2TGUxbWY3eEdkcm9TRe1Q8VV1km4ufSS7aJDdgb1QZfJoZsmRl6481yFoJLOvu4tf3EV8sTHvedFQQKoO7CuDXJySJkuI/bDEib8Sjdebl0yKuUZ/2qQmzglO5EdUZBMU/vW2I8/yXYJzaI0IGboFennac0AaQiR5sqs7V7HuKplcJjUBmd9D2Lm3RhFRc31xSPtY8KQorNETSY3HLA==",
