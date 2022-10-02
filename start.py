@@ -1,4 +1,5 @@
 import requests
+import sys
 from datetime import datetime
 import pytz
 import time
@@ -33,6 +34,7 @@ def loopme():
     time.sleep(50)
   else:
     pass
-
+print ("hello world") # python 3
+sys.stdout.flush()
 while True:
  loopme()
