@@ -14,7 +14,6 @@ def repeatSend():
 
 
 def loopme():
-  print("Loop Starting...")
   if repeatSend() == "01:27:pm":
     url = 'https://shopee.ph/mkt/coins/api/v2/checkin_new'
     headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0"}
@@ -30,14 +29,16 @@ def loopme():
       )
       if (x.json()["data"]["success"]):
         print("Success + " + x.json()["data"]["username"])
+        sys.stdout.flush()
       else:
         print("Failed " + x.json()["data"]["username"])
+        sys.stdout.flush()
     time.sleep(50)
-    sys.stdout.flush()
   else:
     print(repeatSend())
     sys.stdout.flush()
- 
+print("Bot Starting...")
+sys.stdout.flush()
 while True:
  loopme()
 
