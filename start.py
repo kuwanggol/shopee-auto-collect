@@ -36,6 +36,7 @@ def loopme():
     time.sleep(50)
   else:
     print(repeatSend())
+    time.sleep(59)
     sys.stdout.flush()
 print("Bot Starting...")
 sys.stdout.flush()
