@@ -31,7 +31,7 @@ def loopme():
         print("Success Earning To Day + " + x.json()["data"]["username"])
         sys.stdout.flush()
       else:
-        print("Failed Earning to Day" + x.json()["data"]["username"])
+        print("Failed Earning to Day " + x.json()["data"]["username"])
         sys.stdout.flush()
       spinMed = requests.post("https://games.shopee.ph/luckydraw/api/v1/lucky/event/8d0eac94b64bf045", headers=headers, cookies={
           "__LOCALE__null" : "PH",
